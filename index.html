@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lien's Bank - Internet Banking Digital Indonesia</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Lien's Bank merupakan bank digital Indonesia yang memberikan layanan perbankan modern, aman, cepat, dan terpercaya untuk seluruh masyarakat Indonesia.">
+  <meta name="keywords"
+    content="Lien's Bank, digital banking, internet banking, bank digital indonesia, transfer online, top up, bayar tagihan">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       1. LANDING PAGE WRAPPER (SEBELUM LOGIN)
+       ========================================================================== -->
+  <div id="landing-page">
+
+    <!-- STICKY NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container">
+        <a href="#home" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <span>Lien's</span> Bank
+        </a>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#tentang" class="nav-link">Tentang Kami</a>
+          <a href="#fitur" class="nav-link">Fitur</a>
+          <a href="#lokasi" class="nav-link">Lokasi Cabang</a>
+          <a href="#kontak" class="nav-link">Kontak</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline-gold" id="open-login-btn"><i class="fa-solid fa-right-to-bracket"></i>
+            Login</button>
+          <button class="btn btn-gold" id="open-register-btn"><i class="fa-solid fa-user-plus"></i> Register</button>
+          <button class="mobile-toggle" id="mobile-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="hero-tag">
+            <i class="fa-solid fa-shield-halved"></i> Terdaftar & Diawasi OJK
+          </div>
+          <h1 class="hero-title">
+            Selamat Datang di <span>Lien's Bank</span>
+          </h1>
+          <p class="hero-description">
+            Lien's Bank merupakan bank digital Indonesia yang memberikan layanan perbankan modern, aman, cepat, dan
+            terpercaya untuk seluruh masyarakat Indonesia.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-gold" onclick="openRegisterModal()"><i class="fa-solid fa-wallet"></i> Buka
+              Rekening</button>
+            <a href="#tentang" class="btn btn-outline-gold"><i class="fa-solid fa-circle-info"></i> Pelajari Lebih
+              Lanjut</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="hero_bank_preview.png" alt="Lien's Bank Internet Banking Preview" class="hero-image">
+
+          <div class="floating-badge floating-badge-1">
+            <div class="badge-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="badge-text">
+              <p>Layanan Digital</p>
+              <h4>Instant & 24/7</h4>
+            </div>
+          </div>
+
+          <div class="floating-badge floating-badge-2">
+            <div class="badge-icon"><i class="fa-solid fa-lock"></i></div>
+            <div class="badge-text">
+              <p>Keamanan</p>
+              <h4>Enkripsi 256-bit</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TENTANG BANK SECTION -->
+    <section class="section about" id="tentang">
+      <div class="container about-grid">
+        <div>
+          <span class="section-subtitle">Mengenal Lien's Bank</span>
+          <h2 class="section-title">Solusi Finansial Digital Masa Depan Indonesia</h2>
+          <p class="section-description">
+            Kami hadir dengan komitmen tinggi membangun ekosistem perbankan tanpa batas, menghubungkan seluruh pelosok
+            nusantara dalam satu genggaman yang aman dan modern.
+          </p>
+
+          <div class="about-features">
+            <div class="about-box">
+              <i class="fa-solid fa-city"></i>
+              <h4>Berpusat di Jakarta</h4>
+              <p>Kantor pusat megah berlokasi strategis di pusat finansial DKI Jakarta.</p>
+            </div>
+            <div class="about-box">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <h4>Jaringan Nusantara</h4>
+              <p>Memiliki cabang & layanan di seluruh 38 provinsi Indonesia.</p>
+            </div>
+            <div class="about-box">
+              <i class="fa-solid fa-users"></i>
+              <h4>Individu & Perusahaan</h4>
+              <p>Solusi komprehensif untuk nasabah perorangan hingga korporasi.</p>
+            </div>
+            <div class="about-box">
+              <i class="fa-solid fa-microchip"></i>
+              <h4>Teknologi Modern</h4>
+              <p>Diperkuat infrastruktur cloud terbaru dengan sistem realtime.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="hero_bank_preview.png" alt="Tentang Lien's Bank"
+            style="width:100%; border-radius: 20px; filter: brightness(0.95); border: 1px solid var(--border-gold);">
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR UNGGULAN (6 CARDS) -->
+    <section class="section features" id="fitur">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Keunggulan Layanan</span>
+          <h2 class="section-title">Fitur Unggulan Lien's Bank</h2>
+          <p class="section-description">Nikmati kemudahan bertransaksi perbankan tanpa batas dengan standar keamanan
+            internasional.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <h3>Transfer Online</h3>
+            <p>Kirim uang antar rekening Lien's Bank maupun ke seluruh bank di Indonesia secara instan tanpa tunda.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+            <h3>Top Up Saldo</h3>
+            <p>Pengisian saldo fleksibel dan praktis melalui berbagai metode transfer virtual account maupun QRIS.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+            <h3>Pembayaran Tagihan</h3>
+            <p>Bayar Listrik PLN, PDAM, Internet IndiHome, BPJS Kesehatan, hingga Pulsa/Data dalam satu pintu.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Investasi</h3>
+            <p>Kembangkan aset Anda melalui beragam portofolio investasi digital dengan imbal hasil optimal.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-shield-cat"></i></div>
+            <h3>Keamanan Berlapis</h3>
+            <p>Perlindungan data nasabah berstandar enkripsi tinggi, OTP, biometric, dan otentikasi multi-faktor.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3>Customer Service 24 Jam</h3>
+            <p>Tim dukungan profesional siap melayani pertanyaan dan bantuan kendala Anda kapan saja 24/7.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTIK PERUSAHAAN (ANIMATED COUNTERS) -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="500000">0</div>
+          <div class="stat-label">Nasabah Aktif</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="38">0</div>
+          <div class="stat-label">Provinsi Terlayani</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="250">0</div>
+          <div class="stat-label">Cabang Bank</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="99.9" data-suffix="%">0%</div>
+          <div class="stat-label">Keamanan Sistem</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOKASI CABANG & GOOGLE MAPS -->
+    <section class="section locations" id="lokasi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Jaringan Kantor</span>
+          <h2 class="section-title">Lokasi Cabang Lien's Bank</h2>
+          <p class="section-description">Kantor Pusat kami berkedudukan di Jakarta dan didukung cabang di seluruh
+            provinsi Indonesia.</p>
+        </div>
+
+        <div class="locations-grid">
+          <div class="hq-info-card">
+            <h3><i class="fa-solid fa-building"></i> Kantor Pusat</h3>
+            <p><strong>Lien's Bank Tower</strong><br>Jl. Jend. Sudirman No. 88, Karet Semanggi, Jakarta Selatan, DKI
+              Jakarta 12930</p>
+
+            <div class="location-list">
+              <div class="location-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Cabang utama tersebar di seluruh 38 Wilayah Indonesia.</span>
+              </div>
+              <div class="location-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Layanan Drive-Thru ATM 24 Jam di setiap provinsi.</span>
+              </div>
+              <div class="location-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Prioritas Lounge untuk nasabah korporat dan wealth management.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28637048792!2d106.75947796914589!3d-6.229746499876274!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e80d62b291%3A0x6a2c165d459d8636!2sJakarta%20Pusat%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section class="section contact" id="kontak">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Layanan Nasabah</span>
+          <h2 class="section-title">Hubungi Lien's Bank</h2>
+          <p class="section-description">Tim layanan pelanggan kami senantiasa siap membantu kebutuhan perbankan Anda
+            kapan pun.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3>Call Center 24 Jam</h3>
+            <p>085134901831</p>
+            <span>Bebas pulsa untuk seluruh wilayah Indonesia</span>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Email Support</h3>
+            <p>cs@liensbank.com</p>
+            <span>Dukungan respon cepat maksimal 1x24 jam</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <span>Lien's</span> Bank
+        </div>
+        <p>Copyright © 2025 Lien's Bank. Seluruh hak cipta dilindungi undang-undang.</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- ==========================================================================
+       2. AUTHENTICATION MODALS (LOGIN & REGISTER)
+       ========================================================================== -->
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="login-modal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModals()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h2>Masuk ke Dashboard</h2>
+        <p>Silakan masukkan kredensial akun Lien's Bank Anda</p>
+      </div>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-username">Username / Email</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="login-username" class="form-control" placeholder="Masukkan username atau email"
+              required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="login-password" class="form-control" placeholder="Masukkan password Anda"
+              required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-full"><i class="fa-solid fa-right-to-bracket"></i> Login
+          Sekarang</button>
+      </form>
+      <div class="modal-footer-text">
+        Belum memiliki akun? <a href="#" onclick="openRegisterModal()">Daftar Rekening Baru</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGISTER MODAL -->
+  <div class="modal-overlay" id="register-modal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModals()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header">
+        <h2>Pendaftaran Rekening</h2>
+        <p>Buka rekening digital Lien's Bank dalam 2 menit</p>
+      </div>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="reg-name">Nama Lengkap</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-id-card"></i>
+            <input type="text" id="reg-name" class="form-control" placeholder="Nama sesuai KTP" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Alamat Email</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="reg-email" class="form-control" placeholder="contoh@domain.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-phone">Nomor HP</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <input type="tel" id="reg-phone" class="form-control" placeholder="08xxxxxxxxxx" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" id="reg-password" class="form-control" placeholder="Minimal 6 karakter" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-confirm-password">Konfirmasi Password</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-shield"></i>
+            <input type="password" id="reg-confirm-password" class="form-control" placeholder="Ulangi password Anda"
+              required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-full"><i class="fa-solid fa-user-check"></i> Buat Rekening
+          Sekarang</button>
+      </form>
+      <div class="modal-footer-text">
+        Sudah punya rekening? <a href="#" onclick="openLoginModal()">Login di sini</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       3. INTERNET BANKING DASHBOARD (SETELAH LOGIN)
+       ========================================================================== -->
+  <div id="app-dashboard">
+
+    <!-- SIDEBAR KIRI -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-building-columns"></i></div>
+          <span>Lien's</span> Bank
+        </div>
+      </div>
+
+      <ul class="sidebar-menu">
+        <li class="sidebar-link active" data-tab="tab-dashboard" onclick="switchTab('tab-dashboard')">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Dashboard</span>
+          </div>
+        </li>
+
+        <li class="sidebar-link" data-tab="tab-saldo" onclick="switchTab('tab-saldo')">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Saldo</span>
+          </div>
+        </li>
+
+        <li class="sidebar-link" data-tab="tab-topup" onclick="switchTab('tab-topup')">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-circle-plus"></i>
+            <span>Top Up</span>
+          </div>
+        </li>
+
+        <li class="sidebar-link" id="menu-transfer" data-tab="tab-transfer"
+          onclick="handleRestrictedClick('tab-transfer')">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-money-bill-transfer"></i>
+            <span>Transfer</span>
+          </div>
+          <span class="lock-badge" id="lock-badge-transfer"><i class="fa-solid fa-lock"></i></span>
+        </li>
+
+        <li class="sidebar-link" id="menu-tagihan" data-tab="tab-tagihan"
+          onclick="handleRestrictedClick('tab-tagihan')">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-receipt"></i>
+            <span>Bayar Tagihan</span>
+          </div>
+          <span class="lock-badge" id="lock-badge-tagihan"><i class="fa-solid fa-lock"></i></span>
+        </li>
+
+        <li class="sidebar-link" data-tab="tab-mutasi" onclick="switchTab('tab-mutasi')">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>Mutasi Rekening</span>
+          </div>
+        </li>
+
+        <li class="sidebar-link" data-tab="tab-profil" onclick="switchTab('tab-profil')">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-user-gear"></i>
+            <span>Profil</span>
+          </div>
+        </li>
+
+        <li class="sidebar-link" onclick="handleLogout()" style="margin-top: 30px; color: #ef4444;">
+          <div class="sidebar-link-content">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- DASHBOARD MAIN CONTENT WRAPPER -->
+    <main class="dashboard-main">
+      <!-- HEADER DASHBOARD TOP BAR -->
+      <header class="dashboard-header">
+        <div class="dashboard-user-greeting">
+          <h2>Selamat Datang, <span id="dash-user-name">Nasabah</span>!</h2>
+          <p id="dash-date-string">Jumat, 17 Juli 2026</p>
+        </div>
+
+        <div class="dashboard-top-actions">
+          <div class="user-profile-badge">
+            <div class="avatar" id="dash-user-avatar">L</div>
+            <div class="user-info-text">
+              <h4 id="dash-header-name">Nasabah Lien's</h4>
+              <p><i class="fa-solid fa-shield-halved"></i> Akun Verifikasi</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- TABS CONTAINER -->
+      <div class="dashboard-content">
+
+        <!-- TAB 1: DASHBOARD OVERVIEW -->
+        <div class="tab-content active" id="tab-dashboard">
+          <div class="balance-card-grid">
+            <div class="balance-card">
+              <div class="balance-card-header">
+                <span>Rekening Utama (Lien's Digital)</span>
+                <span class="badge-gold"><i class="fa-solid fa-circle"></i> Aktif</span>
+              </div>
+              <div class="balance-amount" id="dash-balance-display">Rp 0</div>
+              <div class="account-details">
+                <div class="account-number">
+                  <p>Nomor Rekening</p>
+                  <h4 id="dash-account-no">7890-1234-5678</h4>
+                </div>
+                <div>
+                  <button class="btn btn-gold" onclick="switchTab('tab-topup')"><i class="fa-solid fa-plus"></i> Top Up
+                    Saldo</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-actions-card">
+              <h3>Aksi Cepat</h3>
+              <div class="action-buttons-grid">
+                <div class="action-btn" onclick="switchTab('tab-topup')">
+                  <i class="fa-solid fa-plus-circle"></i>
+                  <span>Top Up</span>
+                </div>
+                <div class="action-btn" onclick="handleRestrictedClick('tab-transfer')">
+                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  <span>Transfer</span>
+                </div>
+                <div class="action-btn" onclick="handleRestrictedClick('tab-tagihan')">
+                  <i class="fa-solid fa-file-invoice"></i>
+                  <span>Bayar Tagihan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RECENT MUTATIONS PREVIEW CARD -->
+          <div class="content-card">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px;">
+              <h3 class="content-card-title">Transaksi Terakhir</h3>
+              <button class="btn btn-outline-navy" onclick="switchTab('tab-mutasi')"
+                style="padding: 6px 16px; font-size: 0.8rem;">Lihat Semua</button>
+            </div>
+
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Tanggal & Waktu</th>
+                    <th>Jenis Transaksi</th>
+                    <th>Deskripsi</th>
+                    <th>Nominal</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="recent-mutations-body">
+                  <tr>
+                    <td colspan="5" style="text-align:center; color: var(--text-muted); padding: 24px;">Belum ada
+                      riwayat transaksi.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: SALDO -->
+        <div class="tab-content" id="tab-saldo">
+          <div class="content-card">
+            <h3 class="content-card-title">Informasi Saldo Rekening</h3>
+            <p class="content-card-desc">Detail rincian saldo dan limit transaksi harian Anda.</p>
+
+            <div class="balance-card" style="max-width: 500px; margin-bottom: 30px;">
+              <div class="balance-card-header">
+                <span>Total Saldo Tersedia</span>
+                <i class="fa-solid fa-wallet" style="font-size: 1.5rem; color: var(--gold-main);"></i>
+              </div>
+              <div class="balance-amount" id="tab-saldo-amount">Rp 0</div>
+              <div class="account-details">
+                <div>
+                  <p style="font-size:0.8rem; opacity:0.8;">No. Rekening Utama</p>
+                  <h4 id="tab-saldo-acc-no">7890-1234-5678</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-grid">
+              <div class="profile-info-box">
+                <span>Limit Transfer Harian</span>
+                <h4>Rp 100.000.000</h4>
+              </div>
+              <div class="profile-info-box">
+                <span>Status Fitur Transaksi</span>
+                <h4 id="tab-saldo-feature-status" style="color: #ef4444;">Nonaktif (Perlu Top Up Min. Rp50.000)</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: TOP UP -->
+        <div class="tab-content" id="tab-topup">
+          <div class="content-card" style="max-width: 650px;">
+            <h3 class="content-card-title"><i class="fa-solid fa-circle-plus" style="color: var(--gold-main);"></i> Top
+              Up Saldo Rekening</h3>
+            <p class="content-card-desc">Isi saldo rekening Lien's Bank Anda. Minimal Top Up adalah <strong>Rp
+                50.000</strong>.</p>
+
+            <form id="topup-form">
+              <div class="form-group">
+                <label>Pilih Nominal Cepat</label>
+                <div class="quick-amounts">
+                  <div class="amount-chip" onclick="selectQuickAmount(50000)">Rp 50.000</div>
+                  <div class="amount-chip" onclick="selectQuickAmount(100000)">Rp 100.000</div>
+                  <div class="amount-chip" onclick="selectQuickAmount(250000)">Rp 250.000</div>
+                  <div class="amount-chip" onclick="selectQuickAmount(500000)">Rp 500.000</div>
+                  <div class="amount-chip" onclick="selectQuickAmount(1000000)">Rp 1.000.000</div>
+                  <div class="amount-chip" onclick="selectQuickAmount(2500000)">Rp 2.500.000</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="topup-amount">Nominal Top Up (Rp)</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <input type="number" id="topup-amount" class="form-control" placeholder="Minimal 50000" min="50000"
+                    required>
+                </div>
+                <small style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px; display: block;">
+                  <i class="fa-solid fa-circle-info"></i> Nominal di bawah Rp 50.000 akan ditolak oleh sistem.
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="topup-method">Metode Pembayaran</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-credit-card"></i>
+                  <select id="topup-method" class="form-control" required>
+                    <option value="Virtual Account Lien's Bank">Virtual Account Lien's Bank</option>
+                    <option value="Transfer Bank Lain">Transfer Bank Lain (BCA, Mandiri, BRI, BNI)</option>
+                    <option value="QRIS Digital">QRIS Instant Payment</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-full" style="margin-top: 10px;">
+                <i class="fa-solid fa-check-circle"></i> Proses Top Up Saldo
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- TAB 4: TRANSFER (LOCKED WHEN BALANCE = 0) -->
+        <div class="tab-content" id="tab-transfer">
+          <div class="content-card" style="max-width: 650px;">
+            <h3 class="content-card-title"><i class="fa-solid fa-paper-plane" style="color: var(--gold-main);"></i>
+              Transfer Dana Online</h3>
+            <p class="content-card-desc">Kirim dana antar bank atau sesama rekening Lien's Bank secara instan.</p>
+
+            <form id="transfer-form">
+              <div class="form-group">
+                <label for="transfer-bank">Bank Tujuan</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-building-columns"></i>
+                  <select id="transfer-bank" class="form-control" required>
+                    <option value="Lien's Bank">Lien's Bank (Sesama)</option>
+                    <option value="Bank BCA">Bank BCA</option>
+                    <option value="Bank Mandiri">Bank Mandiri</option>
+                    <option value="Bank BRI">Bank BRI</option>
+                    <option value="Bank BNI">Bank BNI</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="transfer-account">Nomor Rekening Tujuan</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-hashtag"></i>
+                  <input type="text" id="transfer-account" class="form-control"
+                    placeholder="Masukkan nomor rekening tujuan" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="transfer-amount">Nominal Transfer (Rp)</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-rupiah-sign"></i>
+                  <input type="number" id="transfer-amount" class="form-control" placeholder="Masukkan nominal transfer"
+                    min="10000" required>
+                </div>
+                <small style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px; display: block;">
+                  Saldo Anda saat ini: <strong id="transfer-available-balance" style="color: var(--gold-main);">Rp
+                    0</strong>
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="transfer-note">Catatan (Opsional)</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-pen"></i>
+                  <input type="text" id="transfer-note" class="form-control" placeholder="Keterangan transfer">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-full">
+                <i class="fa-solid fa-paper-plane"></i> Kirim Transfer Sekarang
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- TAB 5: BAYAR TAGIHAN (LOCKED WHEN BALANCE = 0) -->
+        <div class="tab-content" id="tab-tagihan">
+          <div class="content-card" style="max-width: 700px;">
+            <h3 class="content-card-title"><i class="fa-solid fa-receipt" style="color: var(--gold-main);"></i>
+              Pembayaran Tagihan & Pulsa</h3>
+            <p class="content-card-desc">Pilih jenis layanan tagihan bulanan atau pembelian pulsa digital Anda.</p>
+
+            <div class="bill-category-grid">
+              <div class="bill-cat-item selected" onclick="selectBillCategory('Listrik PLN', 'fa-bolt')">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Listrik PLN</span>
+              </div>
+              <div class="bill-cat-item" onclick="selectBillCategory('PDAM Air', 'fa-droplet')">
+                <i class="fa-solid fa-droplet"></i>
+                <span>PDAM Air</span>
+              </div>
+              <div class="bill-cat-item" onclick="selectBillCategory('Internet Broadband', 'fa-wifi')">
+                <i class="fa-solid fa-wifi"></i>
+                <span>Internet</span>
+              </div>
+              <div class="bill-cat-item" onclick="selectBillCategory('BPJS Kesehatan', 'fa-notes-medical')">
+                <i class="fa-solid fa-notes-medical"></i>
+                <span>BPJS</span>
+              </div>
+              <div class="bill-cat-item" onclick="selectBillCategory('Pulsa & Data', 'fa-mobile-screen-button')">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>Pulsa</span>
+              </div>
+            </div>
+
+            <form id="bill-form">
+              <input type="hidden" id="bill-type" value="Listrik PLN">
+
+              <div class="form-group">
+                <label id="bill-customer-label">ID Pelanggan / Nomor Meter PLN</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-id-card" id="bill-customer-icon"></i>
+                  <input type="text" id="bill-customer-id" class="form-control" placeholder="Masukkan ID Pelanggan"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="bill-amount">Nominal / Jumlah Tagihan (Rp)</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-rupiah-sign"></i>
+                  <input type="number" id="bill-amount" class="form-control" placeholder="Masukkan nominal tagihan"
+                    min="5000" required>
+                </div>
+                <small style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px; display: block;">
+                  Saldo Anda saat ini: <strong id="bill-available-balance" style="color: var(--gold-main);">Rp
+                    0</strong>
+                </small>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-full">
+                <i class="fa-solid fa-credit-card"></i> Bayar Tagihan Sekarang
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- TAB 6: MUTASI REKENING & DOWNLOAD CSV -->
+        <div class="tab-content" id="tab-mutasi">
+          <div class="content-card">
+            <div
+              style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom: 24px;">
+              <div>
+                <h3 class="content-card-title"><i class="fa-solid fa-clock-rotate-left"
+                    style="color: var(--gold-main);"></i> Mutasi Rekening</h3>
+                <p class="content-card-desc" style="margin-bottom: 0;">Riwayat lengkap seluruh transaksi masuk dan
+                  keluar pada rekening Anda.</p>
+              </div>
+
+              <button class="btn btn-gold" onclick="downloadMutasiCSV()"><i class="fa-solid fa-file-csv"></i> Download
+                Mutasi (CSV)</button>
+            </div>
+
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Tanggal & Waktu</th>
+                    <th>Jenis Transaksi</th>
+                    <th>Deskripsi / Keterangan</th>
+                    <th>Nominal</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="full-mutations-body">
+                  <tr>
+                    <td colspan="5" style="text-align:center; color: var(--text-muted); padding: 24px;">Belum ada
+                      riwayat mutasi rekening.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 7: PROFIL -->
+        <div class="tab-content" id="tab-profil">
+          <div class="content-card">
+            <h3 class="content-card-title"><i class="fa-solid fa-user-gear" style="color: var(--gold-main);"></i> Profil
+              Nasabah</h3>
+            <p class="content-card-desc">Informasi data diri dan identitas akun perbankan digital Anda.</p>
+
+            <div class="profile-grid">
+              <div class="profile-info-box">
+                <span>Nama Lengkap Nasabah</span>
+                <h4 id="prof-name">Nasabah Lien's</h4>
+              </div>
+
+              <div class="profile-info-box">
+                <span>Nomor Rekening Principal</span>
+                <h4 id="prof-account-no">7890-1234-5678</h4>
+              </div>
+
+              <div class="profile-info-box">
+                <span>Alamat Email Terdaftar</span>
+                <h4 id="prof-email">nasabah@liensbank.com</h4>
+              </div>
+
+              <div class="profile-info-box">
+                <span>Nomor Handphone</span>
+                <h4 id="prof-phone">081234567890</h4>
+              </div>
+
+              <div class="profile-info-box">
+                <span>Tipe Akun</span>
+                <h4 style="color: var(--gold-main);"><i class="fa-solid fa-crown"></i> Lien's Digital Gold Priority</h4>
+              </div>
+
+              <div class="profile-info-box">
+                <span>Status Verifikasi Akun</span>
+                <h4 style="color: #10b981;"><i class="fa-solid fa-circle-check"></i> Terverifikasi KTP & Biometric</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript Logic File -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    const SUPABASE_URL = 'https://rdbswsypmqjjawasbxcf.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_v3wLGs2Kc1sk9uOheVkKGg_VHbWL_8Q';
+    var supabase = (window.supabase && window.supabase.createClient)
+      ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+      : null;
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
